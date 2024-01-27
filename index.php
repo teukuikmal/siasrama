@@ -35,13 +35,7 @@ include_once ("cek_login.php");
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Dashboard Admin</h1>
-          </div>
-          <div class="col-sm-6">
-            <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Blank Page</li>
-            </ol>
+            <h1> Data Mahasiswa</h1>
           </div>
         </div>
       </div><!-- /.container-fluid -->
@@ -50,36 +44,53 @@ include_once ("cek_login.php");
     <!-- Main content -->
     <section class="content">
 
-      <!-- Default box -->
-      <div class="card">
-        <div class="card-header">
-          <h3 class="card-title">Title</h3>
-
-          <div class="card-tools">
-            <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
-              <i class="fas fa-minus"></i>
-            </button>
-            <button type="button" class="btn btn-tool" data-card-widget="remove" title="Remove">
-              <i class="fas fa-times"></i>
-            </button>
-          </div>
-        </div>
-        <div class="card-body">
-          Start creating your amazing application!
-        </div>
-        <!-- /.card-body -->
-        <div class="card-footer">
-          Footer
-        </div>
-        <!-- /.card-footer-->
-      </div>
-      <!-- /.card -->
-
-    </section>
-    <!-- /.content -->
-  </div>
-  <!-- /.content-wrapper -->
-<!-- footer -->
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">Data Asrama Mahasiswa</h3>
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body">
+                <table id="example2" class="table table-bordered table-hover">
+                  <thead>
+                  <tr>
+                    <th>No</th>
+                    <th>Kelas</th>
+                    <th>Total </th>
+                    
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>Quran Karim
+                    </td>
+                    <td>15 Orang</td>
+              
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Hazirlik
+                    </td>
+                    <td>18 Orang</td>
+                    
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>Ibtidai
+                    </td>
+                    <td>18 Orang</td>
+                    
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>Ihzari
+                    </td>
+                    <td>12 Orang</td>
+                
+                  </tbody>
+                  
+                </table>
+    
 
   
   <!-- Control Sidebar -->

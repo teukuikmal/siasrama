@@ -37,7 +37,7 @@
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-th"></i>
               <p>
-                Mahasiswa
+                Informasi   
                 
               </p>
             </a>
@@ -50,6 +50,24 @@
               </p>
             </a>
             
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-copy"></i>
+              <p>
+                Pelajaran 
+              </p>
+            </a>
+            
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-th"></i>
+              <p>
+                Pendaftaran   
+                
+              </p>
+            </a>
           </li>
         </ul>
       </nav>
