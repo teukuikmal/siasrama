@@ -7,7 +7,7 @@ include_once ("cek_login.php");
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Siakad - Informasi</title>
+  <title>Siakad - Pelajaran</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -33,7 +33,7 @@ include_once ("cek_login.php");
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1> Pendaftaran </h1>
+            <h1> Pelajaran </h1>
           </div>
         </div>
       </div><!-- /.container-fluid -->

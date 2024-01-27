@@ -33,7 +33,7 @@ include_once ("cek_login.php");
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1> Pendaftaran </h1>
+            <h1> Informasi </h1>
           </div>
         </div>
       </div><!-- /.container-fluid -->
@@ -41,7 +41,35 @@ include_once ("cek_login.php");
 
     <!-- Main content -->
     <section class="content">
+    <div class="row">
+          <div class="col-md-10">
+            <div class="card card-default">
+              <div class="card-header">
+                <h3 class="card-title">
+                  <i class="fas fa-exclamation-triangle"></i>
+                  Alerts
+                </h3>
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body">
+                
+                <div class="alert alert-info alert-dismissible">
+                  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                  <h5><i class="icon fas fa-info"></i> Informasi!</h5>
+                  Info alert preview. This alert is dismissable.
+                </div>
+                
+              </div>
+              <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+          </div>
+          <!-- /.col -->
 
+          
+          <!-- /.col -->
+        </div>
+        <!-- /.row -->
             
   
   <!-- Control Sidebar -->
