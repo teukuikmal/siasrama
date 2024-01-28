@@ -41,7 +41,7 @@
     <section class="content">
       
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-7">
           <div class="card card-primary">
             <div class="card-header">
               <h3 class="card-title">Form Pendaftaran</h3>
@@ -76,11 +76,6 @@
                 <textarea id="inputDescription" class="form-control" rows="4"></textarea>
               </div>
               
-              
-              <div class="form-group">
-                <label for="inputProjectLeader">Project Leader</label>
-                <input type="text" id="inputProjectLeader" class="form-control">
-              </div>
             </div>
             <!-- /.card-body -->
           </div>
