@@ -1,6 +1,3 @@
-<!-- <?php
-include_once ("cek_login.php");
-?> -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -8,6 +5,7 @@ include_once ("cek_login.php");
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Siakad - Informasi</title>
+  <link rel="shortcut icon" href="dist/img/logoasrama2.png" type="image/x-icon">
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -41,6 +39,62 @@ include_once ("cek_login.php");
 
     <!-- Main content -->
     <section class="content">
+      
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card card-primary">
+            <div class="card-header">
+              <h3 class="card-title">Form Pendaftaran</h3>
+
+              <div class="card-tools">
+                <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
+                  <i class="fas fa-minus"></i>
+                </button>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="form-group">
+                <label for="inputName">Nama Lengkap</label>
+                <input type="text" id="inputName" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="inputClientCompany">TTL</label>
+                <input type="text" id="inputClientCompany" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="inputClientCompany">No HP</label>
+                <input type="text" id="inputClientCompany" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="inputStatus">Agama</label>
+                <select id="inputStatus" class="form-control custom-select">
+                  <option>Islam</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="inputDescription">Alamat</label>
+                <textarea id="inputDescription" class="form-control" rows="4"></textarea>
+              </div>
+              
+              
+              <div class="form-group">
+                <label for="inputProjectLeader">Project Leader</label>
+                <input type="text" id="inputProjectLeader" class="form-control">
+              </div>
+            </div>
+            <!-- /.card-body -->
+          </div>
+          <!-- /.card -->
+        </div>
+        
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <a href="#" class="btn btn-secondary">Submit</a>
+          
+        </div>
+      </div>
+    </section>
 
             
   

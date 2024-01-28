@@ -1,6 +1,3 @@
-<!-- <?php
-include_once ("cek_login.php");
-?> -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -8,6 +5,7 @@ include_once ("cek_login.php");
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Siakad - Pelajaran</title>
+  <link rel="shortcut icon" href="dist/img/logoasrama2.png" type="image/x-icon">
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">

@@ -1,6 +1,4 @@
-<!-- <?php
-include_once ("cek_login.php");
-?> -->
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -8,6 +6,7 @@ include_once ("cek_login.php");
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Siakad - Informasi</title>
+  <link rel="shortcut icon" href="dist/img/logoasrama2.png" type="image/x-icon">
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -17,7 +16,7 @@ include_once ("cek_login.php");
   <link rel="stylesheet" href="dist/css/adminlte.min.css">
 </head>
 <body class="hold-transition sidebar-mini">
-<!-- Site wrapper -->
+<!-- Site wrapper -->   
 <div class="wrapper">
   <!-- navbar -->
   <?php include_once('navbar.php') ?>
@@ -47,7 +46,7 @@ include_once ("cek_login.php");
               <div class="card-header">
                 <h3 class="card-title">
                   <i class="fas fa-exclamation-triangle"></i>
-                  Alerts
+                  Infomasi
                 </h3>
               </div>
               <!-- /.card-header -->
@@ -55,8 +54,7 @@ include_once ("cek_login.php");
                 
                 <div class="alert alert-info alert-dismissible">
                   <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                  <h5><i class="icon fas fa-info"></i> Informasi!</h5>
-                  Info alert preview. This alert is dismissable.
+                  <h5><i class="icon fas fa-info"></i> Tidak ada Informasi!</h5>
                 </div>
                 
               </div>
