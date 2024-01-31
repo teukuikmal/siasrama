@@ -24,8 +24,8 @@
   <?php include_once('sidebar.php') ?>
 
 
-  <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper">
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <div class="container-fluid">
@@ -39,67 +39,75 @@
 
     <!-- Main content -->
     <section class="content">
-      
       <div class="row">
-        <div class="col-md-7">
+        <div class="col-md-10">
           <div class="card card-primary">
             <div class="card-header">
               <h3 class="card-title">Form Pendaftaran</h3>
-
-              <div class="card-tools">
-                <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
-                  <i class="fas fa-minus"></i>
-                </button>
-              </div>
             </div>
-            <div class="card-body">
-              <div class="form-group">
-                <label for="inputName">Nama Lengkap</label>
-                <input type="text" id="inputName" class="form-control">
+            <!-- /.card-header -->
+            <!-- form start -->
+            <form id="formPendaftaran">
+              <div class="card-body">
+                <div class="form-group">
+                  <label for="inputNama">Nama Lengkap</label>
+                  <input type="text" class="form-control" id="inputNama" name="nama_lengkap" placeholder="Nama Lengkap" required>
+                </div>
+                <div class="form-group">
+                  <label for="ijazah">Ijazah SMA</label>
+                  <div class="input-group">
+                    <div class="custom-file">
+                      <input type="file" class="custom-file-input" id="ijazah" name="ijazah" required>
+                      <label class="custom-file-label" for="ijazah">Choose file</label>
+                    </div>
+                    <div class="input-group-append">
+                      <span class="input-group-text">Upload</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="ktp">KTP</label>
+                  <div class="input-group">
+                    <div class="custom-file">
+                      <input type="file" class="custom-file-input" id="ktp" name="ktp" required>
+                      <label class="custom-file-label" for="ktp">Choose file</label>
+                    </div>
+                    <div class="input-group-append">
+                      <span class="input-group-text">Upload</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="kk">Kartu Keluarga</label>
+                  <div class="input-group">
+                    <div class="custom-file">
+                      <input type="file" class="custom-file-input" id="kk" name="kartu_keluarga" required>
+                      <label class="custom-file-label" for="kk">Choose file</label>
+                    </div>
+                    <div class="input-group-append">
+                      <span class="input-group-text">Upload</span>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="form-group">
-                <label for="inputClientCompany">TTL</label>
-                <input type="text" id="inputClientCompany" class="form-control">
+              <!-- /.card-body -->
+              <div class="card-footer">
+                <button type="button" class="btn btn-primary" onclick="submitForm()">Submit</button>
               </div>
-              <div class="form-group">
-                <label for="inputClientCompany">No HP</label>
-                <input type="text" id="inputClientCompany" class="form-control">
-              </div>
-              <div class="form-group">
-                <label for="inputStatus">Agama</label>
-                <select id="inputStatus" class="form-control custom-select">
-                  <option>Islam</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label for="inputDescription">Alamat</label>
-                <textarea id="inputDescription" class="form-control" rows="4"></textarea>
-              </div>
-              
-            </div>
-            <!-- /.card-body -->
+            </form>
           </div>
           <!-- /.card -->
-        </div>
-        
-      </div>
-      <div class="row">
-        <div class="col-12">
-          <a href="#" class="btn btn-secondary">Submit</a>
-          
         </div>
       </div>
     </section>
 
-            
-  
-  <!-- Control Sidebar -->
-  <aside class="control-sidebar control-sidebar-dark">
-    <!-- Control sidebar content goes here -->
-  </aside>
-  <!-- /.control-sidebar -->
-</div>
-<!-- ./wrapper -->
+    <!-- Control Sidebar -->
+    <aside class="control-sidebar control-sidebar-dark">
+      <!-- Control sidebar content goes here -->
+    </aside>
+    <!-- /.control-sidebar -->
+  </div>
+  <!-- ./wrapper -->
 
 <!-- jQuery -->
 <script src="plugins/jquery/jquery.min.js"></script>
