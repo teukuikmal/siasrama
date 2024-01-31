@@ -29,12 +29,13 @@ include_once ("cek_login.php");
 
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
+    
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1> Data Mahasiswa</h1>
+            <h1> Dashboard</h1>
           </div>
         </div>
       </div><!-- /.container-fluid -->
@@ -43,70 +44,32 @@ include_once ("cek_login.php");
     <!-- Main content -->
     <section class="content">
 
-            <div class="card">
-              <div class="card-header">
-                <h3 class="card-title">Data Asrama Mahasiswa</h3>
-              </div>
-              <!-- /.card-header -->
-              <div class="card-body">
-                <table id="example2" class="table table-bordered table-hover">
-                  <thead>
-                  <tr>
-                    <th>No</th>
-                    <th>Kelas</th>
-                    <th>Total </th>
-                    
-                  </tr>
-                  </thead>
-                  <tbody>
-                  <tr>
-                    <td>1</td>
-                    <td>Quran Karim
-                    </td>
-                    <td>15 Orang</td>
-              
-                  </tr>
-                  <tr>
-                    <td>2</td>
-                    <td>Hazirlik
-                    </td>
-                    <td>18 Orang</td>
-                    
-                  </tr>
-                  <tr>
-                    <td>3</td>
-                    <td>Ibtidai
-                    </td>
-                    <td>18 Orang</td>
-                    
-                  </tr>
-                  <tr>
-                    <td>4</td>
-                    <td>Ihzari
-                    </td>
-                    <td>12 Orang</td>
-                
-                  </tbody>
-                  
-                </table>
-    
+      
+        
+        <!-- /.card-header -->
+        <div class="card-body text-center">
+        <img src="dist/img/dashboard.png" alt="Asrama Mahasiswa" style="width: 100%; max-width: 1000px; height: auto; border-radius: 15px;">
+        </div>
 
-  
-  <!-- Control Sidebar -->
-  <aside class="control-sidebar control-sidebar-dark">
-    <!-- Control sidebar content goes here -->
-  </aside>
-  <!-- /.control-sidebar -->
-</div>
-<!-- ./wrapper -->
+      </div>
 
-<!-- jQuery -->
-<script src="plugins/jquery/jquery.min.js"></script>
-<!-- Bootstrap 4 -->
-<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-<!-- AdminLTE App -->
-<script src="dist/js/adminlte.min.js"></script>
-<!-- AdminLTE for demo purposes -->
-<script src="dist/js/demo.js"></script>
+    </section>
+
+    <!-- Control Sidebar -->
+    <aside class="control-sidebar control-sidebar-dark">
+      <!-- Control sidebar content goes here -->
+    </aside>
+    <!-- /.control-sidebar -->
+  </div>
+  <!-- ./wrapper -->
+
+  <!-- jQuery -->
+  <script src="plugins/jquery/jquery.min.js"></script>
+  <!-- Bootstrap 4 -->
+  <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- AdminLTE App -->
+  <script src="dist/js/adminlte.min.js"></script>
+  <!-- AdminLTE for demo purposes -->
+  <script src="dist/js/demo.js"></script>
 </body>
 </html>
