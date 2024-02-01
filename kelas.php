@@ -32,7 +32,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1> Kelas </h1>
+            <h1> Data Kelas </h1>
           </div>
         </div>
       </div><!-- /.container-fluid -->
@@ -41,7 +41,54 @@
     <!-- Main content -->
     <section class="content">
 
-            
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">Tabel Kelas</h3>
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body">
+                <table id="example2" class="table table-bordered table-hover">
+                  <thead>
+                  <tr>
+                    <th>No</th>
+                    <th>Kelas</th>
+                    <th>Total </th>
+                    
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>Kelas I
+                    </td>
+                    <td>15 Orang</td>
+              
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Kelas II
+                    </td>
+                    <td>18 Orang</td>
+                    
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>Kelas III
+                    </td>
+                    <td>18 Orang</td>
+                    
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>Kelas IV
+                    </td>
+                    <td>12 Orang</td>
+                
+                  </tbody>
+                  
+                </table>
+    
+          
   
   <!-- Control Sidebar -->
   <aside class="control-sidebar control-sidebar-dark">
