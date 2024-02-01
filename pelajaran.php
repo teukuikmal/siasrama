@@ -39,7 +39,52 @@
 
     <!-- Main content -->
     <section class="content">
-
+    <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">Jadwal Pelajaran</h3>
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body">
+                <table id="example2" class="table table-bordered table-hover">
+                  <thead>
+                  <tr>
+                    <th>No</th>
+                    <th>Nama Pelajaran</th>
+             
+                    
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>Tahsin Alqur'an
+                    </td>
+          
+              
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Nahwu Sharaf I
+                    </td>
+             
+                    
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>Nahwu Sharaf II
+                    </td>
+           
+                    
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>Nahwu Sharaf III
+                    </td>
+                   
+                
+                  </tbody>
+                  
+                </table>
             
   
   <!-- Control Sidebar -->
