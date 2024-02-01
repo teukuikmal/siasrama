@@ -14,7 +14,7 @@
           <img src="dist/img/iconorang.png" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="#" class="d-block">By Teuku Ikmal</a>
+          <a href="#" class="d-block"> Teuku Ikmal</a>
         </div>
       </div>
 
@@ -26,7 +26,7 @@
                with font-awesome or any other icon font library -->
           <li class="nav-item">
             <a href="index.php" class="nav-link">
-              <i class="nav-icon fas fa-tachometer-alt"></i>
+              <i class="nav-icon fas fa-home"></i>
               <p>
                 Dashboard
               </p>
@@ -34,8 +34,8 @@
             
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
+            <a href="informasi.php" class="nav-link">
+              <i class="nav-icon fas fa-info-circle"></i>
               <p>
                 Informasi   
                 
@@ -43,8 +43,8 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-copy"></i>
+            <a href="kelas.php" class="nav-link">
+              <i class="nav-icon fas fa-door-closed"></i>
               <p>
                 Kelas 
               </p>
@@ -52,8 +52,8 @@
             
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-copy"></i>
+            <a href="pelajaran.php" class="nav-link">
+              <i class="nav-icon fas fa-book"></i>
               <p>
                 Pelajaran 
               </p>
@@ -61,8 +61,8 @@
             
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
+            <a href="pendaftaran.php" class="nav-link">
+              <i class="nav-icon fas fa-user-plus"></i>
               <p>
                 Pendaftaran   
                 
