@@ -1,32 +1,20 @@
 <?php
-// Koneksi ke database
-$koneksi = mysqli_connect("localhost", "username", "", "db_siasrama");
+include_once("koneksi.php");
 
-// Periksa koneksi
-if (!$koneksi) {
-    die("Koneksi gagal: " . mysqli_connect_error());
-}
-
-// Tangkap data dari formulir
+$id = $_POST['id'];
 $nama = $_POST['nama'];
-$jurusan = $_POST['jurusan'];
-$alamat = $_POST['alamat'];
-$telepon = $_POST['telepon'];
+$tanggal = $_POST['tanggal'];
+$hp = $_POST['hp'];
 
-// Query untuk menyimpan data ke database
-$query = "INSERT INTO pendaftaran (nama, jurusan, alamat, telepon) VALUES ('$nama', '$jurusan', '$alamat', '$telepon')";
+$qry = "UPDATE pendaftar SET nama='$nama', tanggal='$tanggal',  hp='$hp', alamat='$alamat' WHERE id='$id'";
 
-// Jalankan query
-$result = mysqli_query($koneksi, $query);
+$simpan = mysqli_query($con, $qry);
 
-// Periksa keberhasilan query
-if (!$result) {
-    die("Query gagal: " . mysqli_error($koneksi));
+if (!$simpan) {
+    // Check for SQL errors
+    echo "Error: " . mysqli_error($con);
+} else {
+    // Redirect on success
+    header("Location: pendaftaran.php");
+    exit();
 }
-
-// Tutup koneksi database
-mysqli_close($koneksi);
-
-// Redirect ke halaman lain (sesuai kebutuhan)
-header("Location: index.php");
-exit();

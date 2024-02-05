@@ -4,8 +4,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Siakad - Informasi</title>
+  <title>Siakad - Data Pendaftar</title>
   <link rel="shortcut icon" href="dist/img/logoasrama2.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.24/css/dataTables.bootstrap4.min.css">
+
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -32,7 +34,7 @@
         <div class="container-fluid">
           <div class="row mb-2">
             <div class="col-sm-6">
-              <h1> Pendaftaran </h1>
+              <h1> Data Pendaftar </h1>
             </div>
           </div>
         </div><!-- /.container-fluid -->
@@ -42,94 +44,109 @@
       <section class="content">
         <div class="card">
           <div class="card-header">
-            Form Pendaftaran
+            <h2 class="card-title">Data Pendaftar</h2>
+            <div class="float-sm-right">
+              <a class="btn btn-outline-dark mb-1" href="formulir.php">Tambah Pendaftar </a>
+            </div>
           </div>
+          <!-- /.card-header -->
           <div class="card-body">
-            <form action="proses_form.php" method="POST">
-        
+            <table id="example1" class="table table-bordered table-striped">
+              <thead>
+                <tr>
+                  <th>no</th>
+                  <th>nama pendaftar</th>
+                  <th>Tanggal Daftar</th>
+                  <th>Alamat</th>
+                  <th>No Hp</th>
+                  <th>aksi</th>
+                </tr>
+              </thead>
+              <tbody>
+                <?php
+                //1. membuat koneksi
+                include_once("koneksi.php");
+                //2. membuat query untuk menampilkan seluruh data
+                $qry = "SELECT * FROM pendaftar";
+                //3. menjalankan query
+                $tampil = mysqli_query($con, $qry);
+                //4. menampilkan data menggunakan looping foreach
+                $nomor = 1;
+                foreach ($tampil as $data) {
+                ?>
+                  <tr>
+                    <th scope="row"><?php echo $nomor++ ?></th>
+                    <td><?php echo $data['nama'] ?></td>
+                    <td><?php echo $data['tanggal'] ?></td>
+                    <td><?php echo $data['alamat'] ?></td>
+                    <td><?php echo $data['hp'] ?></td>
+                    <!-- Modal -->
+                    <td>
+                      <a href="edit_pendaftar.php?id=<?php echo $data['id'] ?>" class="btn btn-sm btn-info"><i class="fas fa-pencil-alt"></i></a>
+                      <button type="button" data-bs-toggle="modal" data-bs-target="#hapus<?php echo $data['id'] ?>" class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></button>
+                    </td>
+                    <!-- Modal -->
+                    <div class="modal fade" id="hapus<?php echo $data['id'] ?>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Menghapus Data</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            apa benar data jurusan <b><?php echo $data['nama'] ?></b> ingin dihapus?
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tidak</button>
+                            <a href="hapus_pemesanan.php?id=<?php echo $data['id'] ?>" class="btn btn-danger">Ya</a>
+                          </div>
+                        </div>
+                      </div>
 
-              <div class="mb-3">
-                <label for="nama" class="form-label">Nama </label>
-                <input type="text" name="nama" class="form-control" id="nama" aria-describedby="emailHelp">
-              </div>
+                  </tr>
+                <?php
+                }
+                ?>
 
-
-
-              <div class="mb-3">
-                <label for="jurusan" class="form-label">Jurusan</label>
-                <input type="text" name="nama" class="form-control" id="jurusan" aria-describedby="emailHelp">
-              </div>
-
-
-
-              <div class="mb-3">
-                <label for="alamat" class="form-label">Alamat</label>
-                <input type="text" name="alamat" class="form-control" id="alamat" aria-describedby="emailHelp">
-              </div>
-              <div class="mb-3">
-                <label for="alamat" class="form-label">Telepon</label>
-                <input type="text" name="alamat" class="form-control" id="alamat" aria-describedby="emailHelp">
-              </div>
-
-
-
-
-              <button type="submit" class="btn btn-dark">Proses Data</button>
-              <a href="index.php" class="btn btn-secondary">Batal</a>
-            </form>
+              </tbody>
+            </table>
           </div>
+          <!-- /.card-body -->
         </div>
-      </section>
-
-      <!-- Control Sidebar -->
-      <aside class="control-sidebar control-sidebar-dark">
-        <!-- Control sidebar content goes here -->
-      </aside>
-      <!-- /.control-sidebar -->
+        <!-- /.card -->
     </div>
-    <!-- ./wrapper -->
+    <!-- /.col -->
+  </div>
+  <!-- /.row -->
+  </div>
+  <!-- /.container-fluid -->
+  </section>
 
-    <!-- jQuery -->
-    <script src="plugins/jquery/jquery.min.js"></script>
-    <!-- Bootstrap 4 -->
-    <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <!-- DataTables  & Plugins -->
-    <script src="plugins/datatables/jquery.dataTables.min.js"></script>
-    <script src="plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
-    <script src="plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
-    <script src="plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
-    <script src="plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
-    <script src="plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
-    <script src="plugins/jszip/jszip.min.js"></script>
-    <script src="plugins/pdfmake/pdfmake.min.js"></script>
-    <script src="plugins/pdfmake/vfs_fonts.js"></script>
-    <script src="plugins/datatables-buttons/js/buttons.html5.min.js"></script>
-    <script src="plugins/datatables-buttons/js/buttons.print.min.js"></script>
-    <script src="plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
-    <!-- AdminLTE App -->
-    <script src="dist/js/adminlte.min.js"></script>
-    !-- Page specific script -->
-    <script>
-      $(function() {
-        $("#example1").DataTable({
-          "responsive": true,
-          "lengthChange": false,
-          "autoWidth": false,
-          "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
-        }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
-        $('#example2').DataTable({
-          "paging": true,
-          "lengthChange": false,
-          "searching": false,
-          "ordering": true,
-          "info": true,
-          "autoWidth": false,
-          "responsive": true,
-        });
-      });
-    </script>
-    <!-- AdminLTE for demo purposes -->
-    <script src="dist/js/demo.js"></script>
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+  </div>
+  <!-- ./wrapper -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.24/js/dataTables.bootstrap4.min.js"></script>
+
+<script>
+  $(document).ready(function() {
+    $('#example1').DataTable();
+  });
+</script>
+
+  <!-- jQuery -->
+  <script src="plugins/jquery/jquery.min.js"></script>
+  <!-- Bootstrap 4 -->
+  <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- AdminLTE App -->
+  <script src="dist/js/adminlte.min.js"></script>
+  <!-- AdminLTE for demo purposes -->
+  <script src="dist/js/demo.js"></script>
 </body>
 
 </html>
