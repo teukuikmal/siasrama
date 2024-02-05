@@ -2,9 +2,9 @@
 $host = "localhost";
 $username = "root";
 $password = "";
-$database = "db_siasrama";
+$database = "siasrama";
 
-$con = mysqli_connect($host,$username,$password,$database);
+$con = mysqli_connect($host,$username,$password,$database); 
 
 
-?> 
+?>
